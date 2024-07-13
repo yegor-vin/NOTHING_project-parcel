@@ -1,0 +1,11 @@
+{
+  "name": "nothing_project-parcel",
+  "version": "1.0.0",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

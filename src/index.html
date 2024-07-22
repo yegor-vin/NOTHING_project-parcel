@@ -1,11 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Landing</title>
+    <link rel="stylesheet" href="./styles/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h1>NOTHING project</h1>
+  <body class="page__body">
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="top-actions">
+            <a class="logo" href="#">
+              <img src="./images/logo.png" class="logo__image" />
+            </a>
+            <div class="header__menu menu">
+              <div class="menu__link">
+                <a class="menu__phone-number" href="tel:+12345555555">
+                  +1 234 555-55-55
+                </a>
+                <a href="tel:+12345555555" class="menu__phone-icon">
+                  <svg class="menu__icon">
+                    <use href="./images/icons/sprite.svg#phone"></use>
+                  </svg>
+                </a>
+              </div>
+              <a href="#nav-page" class="menu__link">
+                <svg class="menu__icon menu__icon--burger">
+                  <use href="./images/icons/sprite.svg#burger-menu"></use>
+                </svg>
+                <svg class="menu__icon menu__icon--hover">
+                  <use href="./images/icons/sprite.svg#hover"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="header__bottom">
+            <h1 class="header__title">
+                Bring joy back to <br />
+                the everyday.
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
   </body>
 </html>

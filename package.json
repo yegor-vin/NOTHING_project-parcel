@@ -3,9 +3,17 @@
   "version": "1.0.0",
   "main": "src/index.html",
   "scripts": {
-    "start": "parcel src/index.html"
+    "start": "parcel src/index.html",
+    "build": "parcel build --public-url /NOTHING_project-parcel/  src/index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "parcel": "^1.12.3",
+    "sass": "^1.77.8"
+  }
 }

@@ -1,80 +1,75 @@
 .menu {
-    &__link {
-      position: relative;
-  
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 24px;
-      width: 24px;
-  
-      @include onTablet {
-        height: 32px;
-        width: 32px;
-  
-      }
-  
-  
-      cursor: pointer;
-  
-      &:hover {
-        & .menu__icon--burger {
-          display: none;
-        }
-  
-        & .menu__icon--hover {
-          display: block;
-        }
-  
-        & .menu__phone-number {
-          opacity: 1;
-          pointer-events: all;
-        }
-      }
-    }
-  
-    &__icon {
-      height: 24px;
-      width: 24px;
-  
-      &--burger {
-        display: block;
-      }
-  
-      &--hover {
+  &__link {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+
+    cursor: pointer;
+
+    &:hover {
+      & .menu__icon--burger {
         display: none;
       }
+
+      & .menu__icon--hover {
+        display: block;
+      }
+
+      & .menu__phone-number {
+        opacity: 1;
+        pointer-events: all;
+      }
     }
-  
+
+    @include onTablet {
+      height: 32px;
+      width: 32px;
+    }
+  }
+
+  &__icon {
+    height: 24px;
+    width: 24px;
+
+    &--burger {
+      display: block;
+    }
+
+    &--hover {
+      display: none;
+    }
+  }
+
   &__phone-icon {
     width: 24px;
     height: 24px;
-  
   }
-  
-  
-    &__phone-number {
-      padding-right: 8px;
-  
-      position: absolute;
-      left: 0;
-      top: 50%;
-  
-      width: max-content;
-  
-      transform: translate(-100%, -50%);
-  
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 12px;
-      line-height: 16px;
-  
-      color: inherit;
-      opacity: 0;
-  
-      pointer-events: none;
-  
-      transition: all 0.3s linear;
-    }
+
+  &__phone-number {
+    padding-right: 8px;
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    width: max-content;
+
+    transform: translate(-100%, -50%);
+
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: inherit;
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: all 0.3s linear;
   }
-  
+}

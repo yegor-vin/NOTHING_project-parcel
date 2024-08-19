@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -42,13 +42,251 @@
             </div>
           </div>
           <div class="header__bottom">
-            <h1 class="header__title">
-                Bring joy back to <br />
-                the everyday.
-            </h1>
+            <h1 class="header__title">Bring joy back to the everyday</h1>
           </div>
         </div>
       </div>
     </header>
+
+    <aside class="nav-page" id="nav-page">
+      <div class="container">
+        <div class="nav-page__content">
+          <div class="top-actions">
+            <a class="logo" href="index.html">
+              <img src="./images/logo.png" class="logo__image" />
+            </a>
+            <a class="nav-page__close-button close-button" href="#">
+              <svg class="close-button__icon">
+                <use href="./images/icons/sprite.svg#cross"></use>
+              </svg>
+            </a>
+          </div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#header" class="nav__link">Products</a>
+              </li>
+              <li class="nav__item">
+                <a href="#recommended" class="nav__link">Store</a>
+              </li>
+              <li class="nav__item">
+                <a href="#categories" class="nav__link">Login</a>
+              </li>
+              <li class="nav__item">
+                <a href="#benefits" class="nav__link">Cart(0)</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="contacts">
+            <a
+              href="tel:+1234555555"
+              class="contacts__item contacts__item--number"
+              >+1 234 555-55-55</a
+            >
+            <a
+              href="tel:+1234555555"
+              class="contacts__item contacts__item--call"
+              >call to order</a
+            >
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="section recommended">
+        <div class="container">
+          <h2 class="recommended__title">Recommended</h2>
+          <ul class="recommended__list">
+            <li class="recommended__item product">
+              <img
+                class="product__image"
+                src="./images/phone.jpg"
+                alt="Speaker"
+              />
+
+              <div class="product__content">
+                <div class="product__text-content">
+                  <h3 class="product__title">Phone (1)</h3>
+                  <p class="product__description">
+                    Designed with instinct, to bring joy back to the everyday.
+                    Through the Glyph Interface, a perfected OS and exceptional
+                    dual camera. All startlingly fast.
+                  </p>
+                </div>
+                <p class="product__price">$ 499.00</p>
+              </div>
+            </li>
+            <li class="recommended__item product">
+              <img
+                class="product__image"
+                src="./images/ear-2.jpg"
+                __
+                alt="Speaker"
+              />
+
+              <div class="product__content">
+                <div class="product__text-content">
+                  <h3 class="product__title">Ear (2)</h3>
+                  <p class="product__description">
+                    Perfecting the path from artist to ear. So that music sounds
+                    just as it was intended.
+                  </p>
+                </div>
+                <p class="product__price">$ 149.00</p>
+              </div>
+            </li>
+            <li class="recommended__item product">
+              <img
+                class="product__image"
+                src="./images/ear-stick.jpg"
+                __
+                alt="Speaker"
+              />
+
+              <div class="product__content">
+                <div class="product__text-content">
+                  <h3 class="product__title">Ear (stick)</h3>
+                  <p class="product__description">
+                    Tech you can’t feel. Leaving just space for sound to come to
+                    life. Powered by custom sound technology.
+                  </p>
+                </div>
+
+                <p class="product__price">$ 119.00</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section categories" id="categories">
+        <div class="container">
+          <h2 class="categories__title">Browse Nothing products by category</h2>
+
+          <ul class="categories__list">
+            <li class="categories__item category">
+              <div class="category__image-container grid">
+                <img
+                  src="./images/parrots.jpg"
+                  alt="parrots"
+                  class="category__image category__image--smaller grid__item--wide"
+                />
+                <img
+                  src="./images/headphones--invisible-container.jpg"
+                  alt="Headphones with invisible container"
+                  class="category__image grid__item"
+                />
+              </div>
+              <h3 class="categories__text">All products</h3>
+            </li>
+            <li class="categories__item category">
+              <div class="category__image-container grid">
+                <img
+                  src="./images/headphones--single.jpg"
+                  alt="Single headhpone"
+                  class="category__image grid__item"
+                />
+                <img
+                  src="./images/headphones.jpg"
+                  alt="Headphones"
+                  class="category__image category__image--smaller grid__item--wide"
+                />
+              </div>
+              <h3 class="categories__text">Audio</h3>
+            </li>
+            <li class="categories__item category">
+              <div class="category__image-container grid">
+                <img
+                  src="./images/phonecase.jpg"
+                  alt="Phone case"
+                  class="category__image category__image--smaller grid__item--wide"
+                />
+                <img
+                  src="./images/charging-block.jpg"
+                  alt="Charging block"
+                  class="category__image category__image--shifted-right grid__item"
+                />
+              </div>
+              <h3 class="categories__text">Accessories</h3>
+            </li>
+          </ul>
+
+          <button class="categories__view-button" type="button">
+            View all
+          </button>
+        </div>
+      </section>
+      <section class="divider"></section>
+      <section class="section about-us" id="about-us">
+        <div class="container">
+          <div class="grid">
+            <h2 class="about-us__title">About us</h2>
+            <p class="about-us__text">
+              We’re a London-based tech company on a mission to remove barriers between people and technology. <br/><br/>
+
+              To do this, we’re crafting intuitive, flawlessly connected products that improve our lives without getting in the way.
+              No confusing tech-speak. No silly product names. Just artistry, passion and trust. And products we’re proud to share with our friends and family. Simple.<br/><br/>
+              
+              Because beautiful tech shouldn’t be complicated.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="section contact" id="contact">
+        <div class="container">
+          <h2 class="contact__title">Contact us</h2>
+          <div class="grid">
+            <form class="form" action="#">
+                <input
+                  class="form__input"
+                  type="text"
+                  name="text"
+                  id="name"
+                  required
+                  placeholder="Name"
+                />
+                <input
+                  class="form__input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  placeholder="Email"
+                />
+                <textarea
+                  class="form__message"
+                  name="message"
+                  id="message"
+                  placeholder="Message"
+                ></textarea>
+              <button class="form__button" type="button">Send</button>
+            </form>
+
+            <div class="contact__info info">
+              <ul class="info__list">
+                <li class="info__item">
+                  <h4 class="info__title">Phone</h4>
+                  <p class="info__text">+ 1 234 5555-55-55</p>
+                </li>
+                <li class="info__item">
+                  <h4 class="info__title">Email</h4>
+                  <p class="info__text">hello@nothing.com</p>
+                </li>
+                <li class="info__item">
+                  <h4 class="info__title">Address</h4>
+                  <p class="info__text">
+                    400 first ave.<br />
+                    suite 700<br />
+                    Minneapolis, MN 55401
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

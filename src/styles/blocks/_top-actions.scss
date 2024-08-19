@@ -1,7 +1,10 @@
 .top-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+
+  @include onTablet {
     height: 96px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
-  
+}

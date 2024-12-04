@@ -1,0 +1,43 @@
+.recommended {
+  padding-top: 120px;
+
+  &__title {
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    color: #292929;
+    margin-bottom: 48px;
+    font-size: 32px;
+    line-height: 32px;
+
+    @include onTablet {
+      margin-bottom: 56px;
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    @include onDesktop {
+      font-size: 48px;
+      line-height: 48px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 96px;
+    gap: 40px;
+
+    @include onTablet {
+      gap: 56px;
+      padding: 0 0 120px;
+    }
+
+    @include onDesktop {
+      flex-direction: row;
+      padding: 0 0 128px;
+
+      gap: 24px;
+    }
+  }
+}

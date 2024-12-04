@@ -1,0 +1,117 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 0 48px;
+
+  grid-column: 1/3;
+
+  @include onTablet {
+    grid-column: 1/-1;
+    padding: 0 0 80px;
+  }
+
+  @include onDesktop {
+    grid-column: 1 / 6;
+    padding: 0 0 0;
+  }
+
+  &__input {
+    margin: 0 0 16px;
+    padding: 0 0 0 16px;
+
+    height: 48px;
+
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background-color: #f8f8fa;
+
+    transition: color 0.3s, border-color 0.3s;
+
+    &::placeholder {
+      font-family: Space Mono;
+      font-size: 14px;
+    }
+
+    &:hover {
+      border-color: #d5d7de;
+    }
+
+    &:hover::placeholder {
+      color: #111111;
+    }
+  }
+
+  &__message {
+    margin: 0 0 32px;
+    padding: 14px 16px;
+
+    height: 148px;
+
+    font-family: inherit;
+
+    border-radius: 16px;
+    border: none;
+    background-color: #f8f8fa;
+
+    border: 1px solid transparent;
+
+    resize: none;
+
+    transition: color 0.3s linear, border-color 0.3s;
+
+    &::placeholder {
+      font-family: Space Mono;
+      font-size: 14px;
+    }
+
+    &:hover {
+      border-color: #d5d7de;
+    }
+
+    &:hover::placeholder {
+      color: #111111;
+    }
+  }
+
+  &__button {
+    grid-column: 1/3;
+
+    height: 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+    border: 2px solid #292929;
+    background-color: #292929;
+    color: #fff;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+
+    transition: all 0.3s linear;
+    cursor: pointer;
+
+    @include onTablet {
+      grid-column: 1/4;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / 6;
+    }
+
+    &:hover {
+      color: #292929;
+      background-color: #f8f8fa;
+      border-color: #f0f1f4;
+    }
+
+    &:focus {
+      color: #fff;
+      background-color: #111111;
+    }
+  }
+}

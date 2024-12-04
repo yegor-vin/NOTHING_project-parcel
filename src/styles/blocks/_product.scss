@@ -1,0 +1,54 @@
+.product {
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    margin: 0 0 24px;
+    width: 280px;
+
+    @include onTablet {
+      width: 600px;
+    }
+
+    @include onDesktop {
+      width: 324px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__title {
+    margin: 0 0 8px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.2px;
+  }
+
+  &__description {
+    margin: 0 0 12px;
+    width: 280px;
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+
+    @include onTablet {
+      width: 100%;
+    }
+
+    @include onDesktop {
+      width: 280px;
+    }
+  }
+
+  &__price {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+  }
+}

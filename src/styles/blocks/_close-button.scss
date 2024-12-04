@@ -1,0 +1,13 @@
+.close-button {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &__icon {
+        width: 22px;
+        height: 22px;
+    }
+}
+  

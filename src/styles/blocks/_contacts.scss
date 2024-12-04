@@ -1,0 +1,42 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__item {
+    font-family: Space Grotesk;
+    padding-bottom: 8px;
+    width: fit-content;
+
+    text-transform: uppercase;
+    font-weight: 700;
+
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s linear;
+    color: #292929;
+
+    font-size: 16px;
+
+    line-height: 22.4px;
+    letter-spacing: 2px;
+
+    &:hover {
+      border-color: #292929;
+    }
+
+    &--call {
+      font-family: Space Grotesk;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 22.4px;
+      letter-spacing: 2px;
+
+      border-color: #292929;
+    }
+
+    &--number {
+      font-size: 16px;
+      line-height: 27px;
+    }
+  }
+}

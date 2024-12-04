@@ -1,0 +1,17 @@
+.divider {
+  background-image: url(/images/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  margin-bottom: 48px;
+
+  @include onTablet {
+    height: 400px;
+    margin-bottom: 56px;
+  }
+
+  @include onDesktop {
+    height: 460px;
+  }
+}
